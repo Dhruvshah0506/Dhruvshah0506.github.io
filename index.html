@@ -3,22 +3,22 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Dhruv Shah — Software Developer</title>
+<title>Dhruv Shah · Software Developer</title>
 <meta name="description" content="Dhruv Shah, software developer at Metavision Technology. Knowledge distillation, small language models, and agentic AI for enterprise systems.">
 <meta name="theme-color" content="#050403">
 
-<link rel="canonical" href="https://dhruvshah0506.github.io/">
+<link rel="canonical" href="https://shahdhruv.runs-on.dev/">
 <meta property="og:type" content="website">
-<meta property="og:title" content="Dhruv Shah — Software Developer">
+<meta property="og:title" content="Dhruv Shah · Software Developer">
 <meta property="og:description" content="Knowledge distillation, small language models, and agentic AI for enterprise systems at Metavision Technology.">
-<meta property="og:url" content="https://dhruvshah0506.github.io/">
-<meta property="og:image" content="https://dhruvshah0506.github.io/Dhruv_01.jpeg">
+<meta property="og:url" content="https://shahdhruv.runs-on.dev/">
+<meta property="og:image" content="https://shahdhruv.runs-on.dev/Dhruv_01.jpeg">
 <meta property="og:image:alt" content="Portrait of Dhruv Shah">
 <meta property="og:site_name" content="Dhruv Shah">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Dhruv Shah — Software Developer">
+<meta name="twitter:title" content="Dhruv Shah · Software Developer">
 <meta name="twitter:description" content="Knowledge distillation, small language models, and agentic AI for enterprise systems at Metavision Technology.">
-<meta name="twitter:image" content="https://dhruvshah0506.github.io/Dhruv_01.jpeg">
+<meta name="twitter:image" content="https://shahdhruv.runs-on.dev/Dhruv_01.jpeg">
 
 <script type="application/ld+json">
 {
@@ -26,10 +26,10 @@
   "@graph": [
     {
       "@type": "Person",
-      "@id": "https://dhruvshah0506.github.io/#person",
+      "@id": "https://shahdhruv.runs-on.dev/#person",
       "name": "Dhruv Shah",
-      "url": "https://dhruvshah0506.github.io/",
-      "image": "https://dhruvshah0506.github.io/Dhruv_01.jpeg",
+      "url": "https://shahdhruv.runs-on.dev/",
+      "image": "https://shahdhruv.runs-on.dev/Dhruv_01.jpeg",
       "jobTitle": "Software Developer",
       "worksFor": {
         "@type": "Organization",
@@ -58,11 +58,11 @@
     },
     {
       "@type": "WebSite",
-      "@id": "https://dhruvshah0506.github.io/#website",
-      "url": "https://dhruvshah0506.github.io/",
-      "name": "Dhruv Shah — Software Developer",
+      "@id": "https://shahdhruv.runs-on.dev/#website",
+      "url": "https://shahdhruv.runs-on.dev/",
+      "name": "Dhruv Shah · Software Developer",
       "description": "Knowledge distillation, small language models, and agentic AI for enterprise systems at Metavision Technology.",
-      "about": { "@id": "https://dhruvshah0506.github.io/#person" }
+      "about": { "@id": "https://shahdhruv.runs-on.dev/#person" }
     }
   ]
 }
@@ -208,6 +208,14 @@
     border:1px solid rgba(200,147,90,.42);
     box-shadow:0 0 36px rgba(200,147,90,.16), 0 0 90px rgba(200,147,90,.07);
   }
+  .mascotStage{cursor:pointer;overflow:hidden;background:rgba(243,234,217,.03)}
+  .mInner{position:absolute;inset:0;will-change:transform}
+  .mFrame{
+    position:absolute;inset:0;
+    background-size:400% 400%;background-position:50% 52.7%;background-repeat:no-repeat;
+    opacity:1;transition:opacity .22s cubic-bezier(.4,0,.2,1), transform .22s cubic-bezier(.4,0,.2,1);
+  }
+  #mB{opacity:0}
   @media (max-width:640px){
     .aboutRow{flex-direction:column;align-items:center}
     .portraitWrap{order:-1;margin-top:0}
@@ -234,29 +242,6 @@
     font-family:Verdana,sans-serif;font-size:10px;letter-spacing:.3em;text-transform:uppercase;
   }
 
-  /* distillation scrollytelling stage */
-  .stage{height:350vh;position:relative}
-  .stageSticky{
-    position:sticky;top:0;height:100vh;
-    display:flex;flex-direction:column;align-items:center;justify-content:flex-end;
-    padding-bottom:11vh;pointer-events:none;
-  }
-  .stageLabel{position:relative;height:1.4em;width:100%;text-align:center;
-    font-family:Verdana,sans-serif;font-size:11px;letter-spacing:.34em;
-    text-transform:uppercase;color:var(--dim);
-  }
-  .stageLabel span{
-    position:absolute;left:0;right:0;
-    /* no transition: opacity is driven per-frame from the scroll loop */
-  }
-  #lblStudent{color:var(--ochre);opacity:0}
-
-  .stageMessage{
-    position:relative;text-align:center;opacity:0;pointer-events:none;
-    margin-bottom:30px;order:-1;
-  }
-  .msgPreserved{font-size:clamp(20px,2.6vw,30px); color:var(--ivory); margin-bottom:8px; letter-spacing:.06em;}
-  .msgComplexity{font-size:11px; font-family:Verdana,sans-serif; letter-spacing:.3em; text-transform:uppercase; color:var(--ochre);}
 
   .statsGrid{display:flex;gap:44px;align-items:center;flex-wrap:wrap;margin-top:6px}
   .statsLeft{flex:1 1 260px;min-width:250px}
@@ -266,6 +251,7 @@
   .statRow{display:flex;gap:34px;flex-wrap:wrap;margin:4px 0 26px}
   .statNum{
     font-size:clamp(30px,3.6vw,46px);line-height:1;color:var(--ivory);
+    font-variant-numeric:tabular-nums;
     letter-spacing:.02em;
   }
   .statLbl{
@@ -278,6 +264,7 @@
     padding-bottom:3px;
   }
   .repoLink:hover{color:var(--ivory);border-color:var(--ivory)}
+  @media (max-width:430px){ .repoLink{font-size:10px;letter-spacing:.05em;overflow-wrap:anywhere} }
 
   /* quiet control strip */
   .panel{
@@ -335,7 +322,6 @@
     border:1px solid rgba(243,234,217,.16);border-radius:4px;text-decoration:none;
     color:var(--ivory);background:rgba(243,234,217,.03);cursor:pointer;
     transition:border-color .25s ease, background .25s ease, box-shadow .25s ease;
-    will-change:transform;
   }
   .contactCard:hover{
     border-color:rgba(200,147,90,.6);background:rgba(200,147,90,.08);
@@ -356,7 +342,7 @@
 </style>
 </head>
 <body>
-<canvas id="stage"></canvas>
+<canvas id="stage" aria-hidden="true"></canvas>
 <div class="vignette"></div>
 <div id="scrollProgress" aria-hidden="true"></div>
 
@@ -372,7 +358,7 @@
 
   <section class="block">
     <div class="eyebrow">About</div>
-    <h2>I teach small models what the giants know — then I put them to work.</h2>
+    <h2>I teach small models what the giants know, then put them to work.</h2>
     <div class="aboutRow">
       <div class="aboutText">
         <p>I'm Dhruv, a software developer working where modern AI meets the enterprise
@@ -382,11 +368,17 @@
         I ship that thinking into real businesses, building AI and agentic workflows on top
         of Tally and ERP systems used by logistics, biotech and finance companies. Legacy
         systems hold the knowledge; modern AI passes it on. The fresco above is the job
-        description — one hand passing the spark to another.</p>
+        description: one hand passing the spark to another.</p>
       </div>
       <figure class="portraitWrap">
         <canvas class="portraitHalo" id="portraitHalo" width="248" height="248" aria-hidden="true"></canvas>
-        <img class="portrait" src="Dhruv_01.jpeg" alt="Dhruv Shah" width="1067" height="1423" loading="lazy">
+        <div class="portrait mascotStage" id="mascot" tabindex="0" role="img"
+             aria-label="Sketch portrait of Dhruv Shah. It watches the cursor; click it for a reaction.">
+          <div class="mInner" id="mInner">
+            <div class="mFrame" id="mA" style="background-image:url('mascot_sketch_dir.webp')"></div>
+            <div class="mFrame" id="mB"></div>
+          </div>
+        </div>
       </figure>
     </div>
   </section>
@@ -397,21 +389,10 @@
     <p>My flagship work: compressing a fine-tuned GPT-2 Large into DistilGPT-2
     without losing its mind. A pipeline of semantic filtering, dual-LLM
     deduplication, multi-model augmentation and dual-loss training: 774 million
-    parameters taught into 82 million. Keep scrolling and watch it happen.</p>
+    parameters taught into 82 million. Below: the teacher network handing
+    its knowledge to the student.</p>
   </section>
 
-  <div class="stage" id="distillStage">
-    <div class="stageSticky">
-      <div class="stageLabel">
-        <span id="lblTeacher">Teacher &nbsp;·&nbsp; GPT-2 Large &nbsp;·&nbsp; 774M parameters</span>
-        <span id="lblStudent">Student &nbsp;·&nbsp; DistilGPT-2 &nbsp;·&nbsp; 82M parameters</span>
-      </div>
-      <div class="stageMessage" id="lblMessage">
-        <div class="msgPreserved">Capability Preserved</div>
-        <div class="msgComplexity">Complexity Removed</div>
-      </div>
-    </div>
-  </div>
 
   <section class="block" id="stats">
     <div class="eyebrow">Results</div>
@@ -544,7 +525,7 @@ var reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches
 var canvas = document.getElementById('stage');
 var renderer = new THREE.WebGLRenderer({canvas:canvas, antialias:false, alpha:false});
 renderer.setClearColor(0x050403, 1);
-var DPR = Math.min(window.devicePixelRatio || 1, 2);
+var DPR = Math.min(window.devicePixelRatio || 1, Math.min(window.innerWidth, window.innerHeight) < 640 ? 1.5 : 2);
 renderer.setPixelRatio(DPR);
 
 var scene = new THREE.Scene();
@@ -727,299 +708,6 @@ var points = null;
   scene.add(dust);
 })();
 
-/* ---------- the distillation: teacher cloud condenses into student core ---------- */
-var distillU = {
-  uTime: uniforms.uTime,
-  uPixelRatio: uniforms.uPixelRatio,
-  uDistill: {value:0},
-  uDistillVis: {value:0},
-  uReduce: {value: reduceMotion ? 1.0 : 0.0}
-};
-var distillScene = new THREE.Group();
-(function makeDistill(){
-  var isMobile = Math.min(window.innerWidth, window.innerHeight) < 640;
-  var SC = isMobile ? 0.68 : 1.0;      /* responsive world scale */
-  var TX = -3.5*SC, SX = 3.5*SC;       /* teacher / student centers */
-  var SSCALE = 0.42;                   /* student rebuilds at 42% */
-
-  /* ---- one constellation graph: this pattern IS the knowledge ---- */
-  var K = 52;
-  var nodes = [];
-  var guard = 0;
-  while(nodes.length < K && guard++ < 20000){
-    var x = (Math.random()*2-1)*2.7, y = (Math.random()*2-1)*2.1, z = (Math.random()*2-1)*1.3;
-    if((x*x)/(2.7*2.7) + (y*y)/(2.1*2.1) + (z*z)/(1.3*1.3) > 1) continue;
-    var ok = true;
-    for(var i=0;i<nodes.length;i++){
-      var dx=x-nodes[i][0], dy=y-nodes[i][1], dz=z-nodes[i][2];
-      if(dx*dx+dy*dy+dz*dz < 0.85*0.85){ ok=false; break; }
-    }
-    if(ok) nodes.push([x,y,z]);
-  }
-  K = nodes.length;
-  nodes.sort(function(a,b){ return a[0]-b[0]; });   /* ignition sweeps left->right */
-
-  /* deliberate edges: each star to its 2 nearest, deduplicated */
-  var edgeSet = {}, edges = [];
-  for(var i=0;i<K;i++){
-    var ds = [];
-    for(var j=0;j<K;j++){
-      if(i===j) continue;
-      var dx=nodes[i][0]-nodes[j][0], dy=nodes[i][1]-nodes[j][1], dz=nodes[i][2]-nodes[j][2];
-      ds.push([dx*dx+dy*dy+dz*dz, j]);
-    }
-    ds.sort(function(a,b){ return a[0]-b[0]; });
-    for(var n=0;n<2;n++){
-      var j2 = ds[n][1];
-      var key = Math.min(i,j2)+'_'+Math.max(i,j2);
-      if(!edgeSet[key]){ edgeSet[key]=1; edges.push([i,j2]); }
-    }
-  }
-
-  function ord(i){ return i / Math.max(K-1,1); }
-  /* transfer schedule: mote i departs at start(ord), lands 0.10 later */
-  /* start = 0.14 + 0.52*ord  ->  last arrival at ~0.76 */
-
-  /* ---------- geometry: nodes (teacher + student) ---------- */
-  var nPos=[], nR=[], nOrd=[], nKind=[];
-  for(var i=0;i<K;i++){
-    nPos.push(nodes[i][0]*SC + TX, nodes[i][1]*SC, nodes[i][2]*SC);
-    nR.push(Math.random()); nOrd.push(ord(i)); nKind.push(0);
-  }
-  for(var i=0;i<K;i++){
-    nPos.push(nodes[i][0]*SC*SSCALE + SX, nodes[i][1]*SC*SSCALE, nodes[i][2]*SC*SSCALE);
-    nR.push(Math.random()); nOrd.push(ord(i)); nKind.push(1);
-  }
-  var nGeo = new THREE.BufferGeometry();
-  nGeo.setAttribute('position', new THREE.Float32BufferAttribute(nPos,3));
-  nGeo.setAttribute('aR',   new THREE.Float32BufferAttribute(nR,1));
-  nGeo.setAttribute('aOrd', new THREE.Float32BufferAttribute(nOrd,1));
-  nGeo.setAttribute('aKind',new THREE.Float32BufferAttribute(nKind,1));
-
-  var nMat = new THREE.ShaderMaterial({
-    uniforms: distillU,
-    vertexShader:[
-      'attribute float aR; attribute float aOrd; attribute float aKind;',
-      'uniform float uTime; uniform float uPixelRatio;',
-      'uniform float uDistill; uniform float uDistillVis; uniform float uReduce;',
-      'varying float vA; varying float vKind; varying float vPop;',
-      'void main(){',
-      '  float p = clamp(uDistill,0.0,1.0);',
-      '  float start = 0.14 + 0.52*aOrd;',
-      '  float arr = start + 0.10;',
-      '  vec3 pos = position;',
-      '  float a = 0.0; float pop = 0.0; float sz = 1.0;',
-      '  if(aKind < 0.5){',
-      '    /* teacher star: awakens, gives its lesson, stays (slightly humbler) */',
-      '    float awaken = smoothstep(0.0, 0.10, p);',
-      '    float given = smoothstep(start, start+0.05, p);',
-      '    a = awaken * (1.0 - 0.28*given);',
-      '    pop = smoothstep(0.03,0.0,abs(p-start)) * 0.8;   /* flash on giving */',
-      '    sz = 2.9 + aR*1.4 + pop*1.6;',
-      '  } else {',
-      '    /* student star: ignites when its mote lands, then breathes */',
-      '    float ignite = smoothstep(arr, arr+0.035, p);',
-      '    pop = smoothstep(0.05,0.0,abs(p-arr)) * 1.6;     /* arrival flash */',
-      '    float breath = smoothstep(0.82,1.0,p) * (0.5+0.5*sin(uTime*1.8 + aOrd*17.0)) * (1.0-uReduce);',
-      '    a = ignite * (0.9 + 0.25*breath);',
-      '    sz = (2.5 + aR*1.2) + pop*2.2 + breath*0.7;',
-      '  }',
-      '  a *= 0.85 + 0.15*sin(uTime*(0.8+aR*1.5) + aR*40.0);',
-      '  vA = a * uDistillVis; vKind = aKind; vPop = pop;',
-      '  pos.y += sin(uTime*0.5 + aR*30.0)*0.045*(1.0-uReduce);',
-      '  vec4 mv = modelViewMatrix * vec4(pos,1.0);',
-      '  gl_Position = projectionMatrix * mv;',
-      '  gl_PointSize = sz * uPixelRatio * (13.0 / -mv.z);',
-      '}'].join('\n'),
-    fragmentShader:[
-      'precision mediump float;',
-      'varying float vA; varying float vKind; varying float vPop;',
-      'void main(){',
-      '  float d = length(gl_PointCoord - 0.5);',
-      '  float core = smoothstep(0.22, 0.0, d);',
-      '  float halo = smoothstep(0.5, 0.10, d) * 0.5;',
-      '  vec3 teacherC = vec3(0.93, 0.83, 0.66);',
-      '  vec3 studentC = vec3(1.00, 0.95, 0.84);',
-      '  vec3 c = mix(teacherC, studentC, vKind);',
-      '  c = mix(c, vec3(1.0,0.99,0.95), core*0.6 + vPop*0.3);',
-      '  gl_FragColor = vec4(c, min((core+halo) * vA, 1.0));',
-      '}'].join('\n'),
-    transparent:true, depthWrite:false, blending:THREE.AdditiveBlending
-  });
-  var nPts = new THREE.Points(nGeo, nMat);
-  nPts.frustumCulled = false;
-  distillScene.add(nPts);
-
-  /* ---------- geometry: edges (teacher fixed, student draw-in) ---------- */
-  var ePos=[], eLate=[], eKind=[], eSeed=[];
-  edges.forEach(function(e){
-    var a=e[0], b=e[1];
-    var late = Math.max(ord(a), ord(b));
-    var seed = Math.random();
-    /* teacher copy */
-    ePos.push(nodes[a][0]*SC+TX, nodes[a][1]*SC, nodes[a][2]*SC,
-              nodes[b][0]*SC+TX, nodes[b][1]*SC, nodes[b][2]*SC);
-    eLate.push(late, late); eKind.push(0,0); eSeed.push(seed,seed);
-    /* student copy */
-    ePos.push(nodes[a][0]*SC*SSCALE+SX, nodes[a][1]*SC*SSCALE, nodes[a][2]*SC*SSCALE,
-              nodes[b][0]*SC*SSCALE+SX, nodes[b][1]*SC*SSCALE, nodes[b][2]*SC*SSCALE);
-    eLate.push(late, late); eKind.push(1,1); eSeed.push(seed,seed);
-  });
-  var eGeo = new THREE.BufferGeometry();
-  eGeo.setAttribute('position', new THREE.Float32BufferAttribute(ePos,3));
-  eGeo.setAttribute('aLate', new THREE.Float32BufferAttribute(eLate,1));
-  eGeo.setAttribute('aKind', new THREE.Float32BufferAttribute(eKind,1));
-  eGeo.setAttribute('aSeed', new THREE.Float32BufferAttribute(eSeed,1));
-  var eMat = new THREE.ShaderMaterial({
-    uniforms: distillU,
-    vertexShader:[
-      'attribute float aLate; attribute float aKind; attribute float aSeed;',
-      'uniform float uTime;',
-      'uniform float uDistill; uniform float uDistillVis;',
-      'varying float vA; varying float vKind;',
-      'void main(){',
-      '  float p = clamp(uDistill,0.0,1.0);',
-      '  float a = 0.0;',
-      '  if(aKind < 0.5){',
-      '    float awaken = smoothstep(0.02, 0.12, p);',
-      '    float shimmer = 0.75 + 0.25*sin(uTime*0.9 + aSeed*40.0);',
-      '    a = awaken * 0.15 * shimmer;',
-      '  } else {',
-      '    float arrLate = 0.14 + 0.52*aLate + 0.10;',
-      '    float drawn = smoothstep(arrLate, arrLate+0.05, p);',
-      '    float shimmer = 0.8 + 0.2*sin(uTime*1.1 + aSeed*40.0);',
-      '    a = drawn * 0.30 * shimmer;',
-      '  }',
-      '  vA = a * uDistillVis; vKind = aKind;',
-      '  gl_Position = projectionMatrix * modelViewMatrix * vec4(position,1.0);',
-      '}'].join('\n'),
-    fragmentShader:[
-      'precision mediump float;',
-      'varying float vA; varying float vKind;',
-      'void main(){',
-      '  vec3 teacherC = vec3(0.76, 0.56, 0.33);',
-      '  vec3 studentC = vec3(0.97, 0.80, 0.54);',
-      '  gl_FragColor = vec4(mix(teacherC, studentC, vKind), min(vA,1.0));',
-      '}'].join('\n'),
-    transparent:true, depthWrite:false, blending:THREE.AdditiveBlending
-  });
-  var eLines = new THREE.LineSegments(eGeo, eMat);
-  eLines.frustumCulled = false;
-  distillScene.add(eLines);
-
-  /* ---------- geometry: the haze — the 774M of bulk around the teacher ---------- */
-  var H_N = isMobile ? 2600 : 5200;
-  var hPos=[], hR=[];
-  for(var i=0;i<H_N;i++){
-    var rr = Math.pow(Math.random(),0.45)*3.5;
-    var th = Math.random()*Math.PI*2, ph = Math.acos(2*Math.random()-1);
-    hPos.push(rr*Math.sin(ph)*Math.cos(th)*1.15*SC + TX,
-              rr*Math.sin(ph)*Math.sin(th)*0.85*SC,
-              rr*Math.cos(ph)*0.6*SC);
-    hR.push(Math.random(), Math.random(), Math.random());
-  }
-  var hGeo = new THREE.BufferGeometry();
-  hGeo.setAttribute('position', new THREE.Float32BufferAttribute(hPos,3));
-  hGeo.setAttribute('aR', new THREE.Float32BufferAttribute(hR,3));
-  var hMat = new THREE.ShaderMaterial({
-    uniforms: distillU,
-    vertexShader:[
-      'attribute vec3 aR;',
-      'uniform float uTime; uniform float uPixelRatio;',
-      'uniform float uDistill; uniform float uDistillVis; uniform float uReduce;',
-      'varying float vA;',
-      'void main(){',
-      '  float p = clamp(uDistill,0.0,1.0);',
-      '  vec3 pos = position;',
-      '  pos.x += sin(uTime*0.35 + aR.x*30.0)*0.10*(1.0-uReduce);',
-      '  pos.y += cos(uTime*0.30 + aR.y*30.0)*0.08*(1.0-uReduce);',
-      '  float awaken = smoothstep(0.0, 0.10, p);',
-      '  /* the release: the bulk exhales downward and fades — it was never the knowledge */',
-      '  float release = smoothstep(0.70, 0.95, p);',
-      '  pos.y -= release * (0.8 + aR.z*2.6);',
-      '  pos.x -= release * (aR.y - 0.5) * 1.4;',
-      '  float a = (0.05 + 0.06*aR.x) * awaken * (1.0 - release);',
-      '  a *= 0.7 + 0.3*sin(uTime*(0.5+aR.y) + aR.z*40.0);',
-      '  vA = a * uDistillVis;',
-      '  vec4 mv = modelViewMatrix * vec4(pos,1.0);',
-      '  gl_Position = projectionMatrix * mv;',
-      '  gl_PointSize = (1.1 + aR.y*1.7) * uPixelRatio * (13.0 / -mv.z);',
-      '}'].join('\n'),
-    fragmentShader:[
-      'precision mediump float; varying float vA;',
-      'void main(){',
-      '  float d = length(gl_PointCoord - 0.5);',
-      '  float a = smoothstep(0.5, 0.05, d);',
-      '  gl_FragColor = vec4(0.85, 0.72, 0.52, min(a*vA,1.0));',
-      '}'].join('\n'),
-    transparent:true, depthWrite:false, blending:THREE.AdditiveBlending
-  });
-  var hPts = new THREE.Points(hGeo, hMat);
-  hPts.frustumCulled = false;
-  distillScene.add(hPts);
-
-  /* ---------- geometry: the motes — the lesson in transit ---------- */
-  var TRAIL = 3;
-  var mFrom=[], mTo=[], mOrd=[], mSeed=[], mTrail=[];
-  for(var i=0;i<K;i++){
-    for(var ttr=0;ttr<TRAIL;ttr++){
-      mFrom.push(nodes[i][0]*SC+TX, nodes[i][1]*SC, nodes[i][2]*SC);
-      mTo.push(nodes[i][0]*SC*SSCALE+SX, nodes[i][1]*SC*SSCALE, nodes[i][2]*SC*SSCALE);
-      mOrd.push(ord(i)); mSeed.push((i*2654435761 % 1000)/1000); mTrail.push(ttr);
-    }
-  }
-  var mGeo = new THREE.BufferGeometry();
-  mGeo.setAttribute('position', new THREE.Float32BufferAttribute(mFrom,3));
-  mGeo.setAttribute('aTo', new THREE.Float32BufferAttribute(mTo,3));
-  mGeo.setAttribute('aOrd', new THREE.Float32BufferAttribute(mOrd,1));
-  mGeo.setAttribute('aSeed', new THREE.Float32BufferAttribute(mSeed,1));
-  mGeo.setAttribute('aTrail', new THREE.Float32BufferAttribute(mTrail,1));
-  var mMat = new THREE.ShaderMaterial({
-    uniforms: distillU,
-    vertexShader:[
-      'attribute vec3 aTo; attribute float aOrd; attribute float aSeed; attribute float aTrail;',
-      'uniform float uTime; uniform float uPixelRatio;',
-      'uniform float uDistill; uniform float uDistillVis;',
-      'varying float vA;',
-      'void main(){',
-      '  float p = clamp(uDistill,0.0,1.0);',
-      '  float start = 0.14 + 0.52*aOrd;',
-      '  float t = (p - start) / 0.10 - aTrail*0.06;',
-      '  float on = step(0.001, t) * step(t, 0.999);',
-      '  t = clamp(t, 0.0, 1.0);',
-      '  /* arc: a quadratic bezier lifted above the void */',
-      '  vec3 a0 = position;',
-      '  vec3 a2 = aTo;',
-      '  vec3 mid = (a0 + a2) * 0.5;',
-      '  mid.y += 1.3 + aSeed*1.1;',
-      '  mid.z += (aSeed - 0.5) * 0.9;',
-      '  vec3 q0 = mix(a0, mid, t);',
-      '  vec3 q1 = mix(mid, a2, t);',
-      '  vec3 pos = mix(q0, q1, t);',
-      '  pos.y += sin(t*12.0 + aSeed*20.0)*0.03;',
-      '  float fade = sin(t*3.14159);',
-      '  vA = on * fade * (1.0 - aTrail*0.30) * uDistillVis;',
-      '  vec4 mv = modelViewMatrix * vec4(pos,1.0);',
-      '  gl_Position = projectionMatrix * mv;',
-      '  gl_PointSize = (3.4 - aTrail*0.7) * uPixelRatio * (13.0 / -mv.z);',
-      '}'].join('\n'),
-    fragmentShader:[
-      'precision mediump float; varying float vA;',
-      'void main(){',
-      '  float d = length(gl_PointCoord - 0.5);',
-      '  float core = smoothstep(0.20, 0.0, d);',
-      '  float halo = smoothstep(0.5, 0.08, d)*0.6;',
-      '  vec3 c = mix(vec3(1.0,0.90,0.66), vec3(1.0,0.99,0.94), core);',
-      '  gl_FragColor = vec4(c, min((core+halo)*vA, 1.0));',
-      '}'].join('\n'),
-    transparent:true, depthWrite:false, blending:THREE.AdditiveBlending
-  });
-  var mPts = new THREE.Points(mGeo, mMat);
-  mPts.frustumCulled = false;
-  distillScene.add(mPts);
-
-  scene.add(distillScene);
-})();
 
 /* ---------- the spark of creation: a breathing glow in the fingertip gap ---------- */
 var spark, sparkMat;
@@ -1045,7 +733,7 @@ var spark, sparkMat;
 /* ---------- sample an image into particle targets ---------- */
 function buildFromImage(img, densityMul){
   var isMobile = Math.min(window.innerWidth, window.innerHeight) < 640;
-  var budget = Math.floor((isMobile ? 26000 : 70000) * densityMul);
+  var budget = Math.floor((isMobile ? 15000 : 70000) * densityMul);
 
   var W = 640;
   var H = Math.round(W * img.height / img.width);
@@ -1180,33 +868,6 @@ function loop(){
   mouseSm.y += (mouseTarget.y - mouseSm.y) * mk;
   uniforms.uMouse.value.set(mouseSm.x, mouseSm.y);
 
-  /* distillation stage: progress + visibility from scroll */
-  if(stageEl){
-    var r = stageEl.getBoundingClientRect();
-    var vh = window.innerHeight;
-    var travel = Math.max(r.height - vh, 1);
-    var dp = Math.min(Math.max(-r.top / travel, 0), 1);
-    var vis = Math.min(Math.max((vh*0.30 - r.top) / (vh*0.30), 0), 1)
-            * Math.min(Math.max((r.bottom - vh*0.55) / (vh*0.45), 0), 1);
-    distillU.uDistill.value += (dp - distillU.uDistill.value) * smoothK(5.7, dt);
-    distillU.uDistillVis.value += (Math.min(vis,1) - distillU.uDistillVis.value) * smoothK(7.7, dt);
-    if(lblTeacher){
-      var pe = distillU.uDistill.value;
-      var vv = Math.min(vis,1);
-      /* teacher label: present while the lesson is being given */
-      lblTeacher.style.opacity =
-        Math.min(Math.max((pe - 0.03)/0.07, 0), 1) *
-        Math.min(Math.max(1 - (pe - 0.42)/0.16, 0), 1) * vv;
-      /* student label: rises as the first motes land */
-      lblStudent.style.opacity =
-        Math.min(Math.max((pe - 0.50)/0.14, 0), 1) * vv;
-      var msgElement = document.getElementById('lblMessage');
-      if(msgElement){
-        msgElement.style.opacity =
-          Math.min(Math.max((pe - 0.86)/0.10, 0), 1) * vv;
-      }
-    }
-  }
 
   /* spark: breathes while the hands are formed, sleeps when scrolled away */
   if(sparkMat){
@@ -1272,6 +933,21 @@ function resize(){
 window.addEventListener('resize', resize);
 resize();
 
+/* rebuild the hands when the viewport class changes (rotate / major resize) */
+var lastVW = window.innerWidth, lastVH = window.innerHeight, rebuildT = 0;
+window.addEventListener('resize', function(){
+  clearTimeout(rebuildT);
+  rebuildT = setTimeout(function(){
+    var was = Math.min(lastVW, lastVH) < 640;
+    var now = Math.min(window.innerWidth, window.innerHeight) < 640;
+    if((was !== now || Math.abs(window.innerWidth - lastVW) > lastVW * 0.25) && currentImg){
+      buildFromImage(currentImg, parseFloat(densitySel.value));
+    }
+    lastVW = window.innerWidth; lastVH = window.innerHeight;
+  }, 350);
+});
+/* ponytail: distill-scene scale is still load-time; full rebuild needs a refactor */
+
 /* ---------- controls ---------- */
 var currentImg = null;
 var densitySel = document.getElementById('density');
@@ -1297,79 +973,10 @@ document.getElementById('imgfile').addEventListener('change', function(e){
 });
 
 /* ---------- boot ---------- */
-var stageEl = document.getElementById('distillStage');
-var lblTeacher = document.getElementById('lblTeacher');
-var lblStudent = document.getElementById('lblStudent');
+if(window.matchMedia('(pointer:coarse)').matches){
+  document.getElementById('hint').textContent = 'tap to scatter';
+}
 
-/* ---------- auto-journey: reaching the distillation stage plays it through,
-   any user input (wheel, touch, key, click) hands control back instantly ---------- */
-(function autoJourney(){
-  if(reduceMotion || !stageEl) return;
-  var active = false, rafId = 0, armed = true, lastY = window.scrollY;
-
-  function stop(){
-    if(!active) return;
-    active = false;
-    cancelAnimationFrame(rafId);
-    document.documentElement.style.scrollBehavior = '';
-  }
-
-  var startedAt = 0;
-  function start(){
-    if(active) return;
-    active = true; armed = false;
-    startedAt = performance.now();
-    /* per-frame scrollTo must not fight the CSS smooth-scroll */
-    document.documentElement.style.scrollBehavior = 'auto';
-    var vh = window.innerHeight;
-    var r = stageEl.getBoundingClientRect();
-    var from = window.scrollY;
-    var to = from + r.top + stageEl.offsetHeight - vh;   /* end of the sticky stage */
-    var dist = Math.max(to - from, 1);
-    /* ~0.9 viewport-heights per second, capped at 3s */
-    var dur = Math.min(Math.max(dist / (vh * 0.9), 1.5), 3) * 1000;
-    var t0 = performance.now();
-    function step(now){
-      if(!active) return;
-      var k = Math.min((now - t0) / dur, 1);
-      /* starts at ~1.8x speed to pick up the user's scroll momentum, settles
-         toward linear so the scrubbed choreography keeps its pacing, lands soft */
-      var e = ((0.1*k - 0.9)*k + 1.8)*k;
-      window.scrollTo(0, from + dist * e);
-      if(k < 1){ rafId = requestAnimationFrame(step); }
-      else { stop(); }
-    }
-    rafId = requestAnimationFrame(step);
-  }
-
-  /* the wheel gesture that carries the user into the stage keeps ticking
-     after start(); ignore those same-direction ticks for a moment, but an
-     upward tick or any later input hands control back instantly */
-  window.addEventListener('wheel', function(e){
-    if(!active) return;
-    if(e.deltaY < 0 || performance.now() - startedAt > 1200) stop();
-  }, {passive:true});
-  ['touchstart','pointerdown','mousedown'].forEach(function(ev){
-    window.addEventListener(ev, stop, {passive:true});
-  });
-  window.addEventListener('keydown', function(e){
-    if([' ','ArrowUp','ArrowDown','PageUp','PageDown','Home','End'].indexOf(e.key) !== -1) stop();
-  });
-
-  window.addEventListener('scroll', function(){
-    var y = window.scrollY;
-    var goingDown = y > lastY;
-    lastY = y;
-    if(active) return;                       /* our own programmatic scrolling */
-    var r = stageEl.getBoundingClientRect();
-    var vh = window.innerHeight;
-    if(r.top > vh * 0.9){ armed = true; }    /* re-arm once fully above the stage */
-    /* entering the stage heading down, with most of the journey still ahead */
-    if(armed && goingDown && r.top <= vh * 0.15 && r.bottom > vh * 1.5){
-      start();
-    }
-  }, {passive:true});
-})();
 
 /* animated result counters, run once when visible */
 (function counters(){
@@ -1402,6 +1009,7 @@ var lblStudent = document.getElementById('lblStudent');
   }, {threshold: 0.35});
   io.observe(section);
 })();
+
 
 /* ---------- neural network viz: teacher feeds the student ---------- */
 (function nnViz(){
@@ -1442,13 +1050,12 @@ var lblStudent = document.getElementById('lblStudent');
         });
       });
     }
-    var circles = [];
     nodes.forEach(function(col){ col.forEach(function(p){
-      circles.push(el('circle', {cx:p.x, cy:p.y, r: net.r,
+      el('circle', {cx:p.x, cy:p.y, r: net.r,
         fill:'#241a0e', stroke:'#c8935a', 'stroke-width': bright?1.1:0.8,
-        opacity: bright?0.95:0.8}));
+        opacity: bright?0.95:0.8});
     });});
-    return {nodes:nodes, edges:edges, circles:circles};
+    return {nodes:nodes, edges:edges};
   }
 
   var t = buildNet(T, false);
@@ -1467,10 +1074,10 @@ var lblStudent = document.getElementById('lblStudent');
 
   el('text', {x:156, y:VH-6, 'text-anchor':'middle', fill:'#8a8177',
     'font-family':'Verdana,sans-serif', 'font-size':9,
-    'letter-spacing':3}).textContent = 'TEACHER \u00B7 774M';
+    'letter-spacing':3}).textContent = 'TEACHER · 774M';
   el('text', {x:466, y:VH-6, 'text-anchor':'middle', fill:'#c8935a',
     'font-family':'Verdana,sans-serif', 'font-size':9,
-    'letter-spacing':3}).textContent = 'STUDENT \u00B7 82M';
+    'letter-spacing':3}).textContent = 'STUDENT · 82M';
 
   if(reduceMotion) return; /* static diagram is enough */
 
@@ -1488,13 +1095,12 @@ var lblStudent = document.getElementById('lblStudent');
     });
   }
   function assign(p){
-    /* weight: mostly teacher activity, regular distill transfers, some student */
     var roll = Math.random();
     var pool = roll < 0.55 ? 0 : (roll < 0.80 ? 1 : 2);
     var opts = allEdges.filter(function(a){ return a.kind === pool; });
     var pick = opts[Math.floor(Math.random()*opts.length)];
     p.edge = pick.e; p.kind = pick.kind;
-    p.t = -Math.random()*0.4;               /* stagger */
+    p.t = -Math.random()*0.4;
     p.dur = 0.32 + Math.random()*0.38;
     p.dot.setAttribute('r', pick.kind === 1 ? 2.6 : 1.8);
     p.dot.setAttribute('fill', pick.kind === 1 ? '#ffdf9e' : '#ffe9c4');
@@ -1536,7 +1142,7 @@ boot.onload = function(){
   loop();
 };
 boot.onerror = function(){
-  document.getElementById('hint').textContent = 'source image failed — use "custom image" below';
+  document.getElementById('hint').textContent = 'source image failed, use "custom image" below';
   loop();
 };
 boot.src = HANDS_B64;
@@ -1654,6 +1260,115 @@ if('IntersectionObserver' in window){
 })();
 </script>
 <script>
+/* ---------- sketch mascot: watches the cursor, reacts to pokes ---------- */
+(function(){
+'use strict';
+var stage = document.getElementById('mascot');
+if(!stage) return;
+var reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+var fine = window.matchMedia('(hover:hover) and (pointer:fine)').matches;
+var layers = [document.getElementById('mA'), document.getElementById('mB')];
+var front = 0, curKey = 'd4', busyUntil = 0;
+var DIR = 'mascot_sketch_dir.webp', REACT = 'mascot_sketch_react.webp';
+new Image().src = REACT;   /* warm the reactions sheet before the first poke */
+
+/* zoomed 3x3 grid: per-cell offsets that keep the face centered in the ring */
+var PX = [5.6, 50, 94.4], PY = [8.2, 52.7, 97.1];
+var lastSwap = 0;
+function show(sheet, cell){
+  var key = sheet + cell;
+  if(key === curKey) return;
+  var now = performance.now();
+  if(sheet === 'd' && now - lastSwap < 110) return;   /* no boundary flicker */
+  lastSwap = now;
+  curKey = key;
+  var back = layers[1 - front];
+  back.style.backgroundImage = "url('" + (sheet === 'd' ? DIR : REACT) + "')";
+  back.style.backgroundPosition = PX[cell % 3] + '% ' + PY[Math.floor(cell / 3)] + '%';
+  back.style.transform = 'scale(1.015)';
+  back.style.opacity = '1';
+  layers[front].style.opacity = '0';
+  layers[front].style.transform = 'scale(1)';
+  requestAnimationFrame(function(){ back.style.transform = 'scale(1)'; });
+  front = 1 - front;
+}
+
+/* the analog layer: the head continuously leans toward the cursor, so the
+   frame switches are landmarks inside one smooth motion, not the motion itself */
+var inner = document.getElementById('mInner');
+var px = 0, py = 0, haveP = false;
+var fx = 0, fy = 0, frot = 0, fsc = 1, scT = 1;
+function flow(){
+  requestAnimationFrame(flow);
+  var tx = 0, ty = 0, tr = 0;
+  if(haveP && performance.now() >= busyUntil){
+    var r = stage.getBoundingClientRect();
+    var dx = px - (r.left + r.width / 2);
+    var dy = py - (r.top + r.height / 2);
+    tx = Math.max(-5, Math.min(5, dx * 0.022));
+    ty = Math.max(-4, Math.min(4, dy * 0.028));
+    tr = Math.max(-2.4, Math.min(2.4, dx * 0.011));
+    if(dx * dx + dy * dy >= 8100){            /* 90px dead zone */
+      var col = dx < -60 ? 0 : dx > 60 ? 2 : 1;
+      var row = dy < -60 ? 0 : dy > 60 ? 2 : 1;
+      show('d', row * 3 + col);
+    } else {
+      show('d', 4);
+    }
+  }
+  fx += (tx - fx) * 0.085;
+  fy += (ty - fy) * 0.085;
+  frot += (tr - frot) * 0.085;
+  fsc += (scT - fsc) * 0.14;
+  if(scT < 1 && fsc - scT < 0.012) scT = 1;    /* squash released: spring back */
+  inner.style.transform = 'translate(' + fx.toFixed(2) + 'px,' + fy.toFixed(2) +
+    'px) rotate(' + frot.toFixed(2) + 'deg) scale(' + fsc.toFixed(3) + ')';
+}
+if(fine && !reduce){
+  document.addEventListener('pointermove', function(e){
+    px = e.clientX; py = e.clientY; haveP = true;
+  }, {passive: true});
+  requestAnimationFrame(flow);
+}
+
+/* pokes: one reaction per click; five fast pokes earn the shocked face */
+var clicks = [];
+function poke(){
+  var now = performance.now();
+  clicks.push(now);
+  clicks = clicks.filter(function(t){ return now - t < 1800; });
+  var cell, hold;
+  if(clicks.length >= 5){ cell = 2; hold = 1400; clicks = []; }
+  else { cell = 1 + Math.floor(Math.random() * 8); hold = 600; }
+  busyUntil = now + hold;
+  scT = 0.9;                                  /* squash, springs back in flow() */
+  show('r', cell);
+  setTimeout(function(){
+    if(performance.now() >= busyUntil){ show('d', 4); }
+  }, hold);
+}
+stage.addEventListener('click', poke);
+stage.addEventListener('keydown', function(e){
+  if(e.key === 'Enter' || e.key === ' '){ e.preventDefault(); poke(); }
+});
+
+/* idle blink so he feels alive even when ignored */
+if(!reduce){
+  (function blink(){
+    setTimeout(function(){
+      if(performance.now() >= busyUntil && curKey.charAt(0) === 'd'){
+        var prev = parseInt(curKey.slice(1), 10);
+        busyUntil = performance.now() + 220;
+        show('r', 0);
+        setTimeout(function(){ show('d', prev); }, 220);
+      }
+      blink();
+    }, 5200 + Math.random() * 4800);
+  })();
+}
+})();
+</script>
+<script>
 /* ---------- phase 2: Motion (vanilla Framer Motion) enhancements ---------- */
 (function(){
 'use strict';
@@ -1708,7 +1423,10 @@ if(!reduce && M.inView){
         M.animate(rest, {opacity: 1, y: [16, 0]},
           {duration: 0.65, delay: M.stagger(0.09, {startDelay: 0.15}), ease: EASE});
       }
-      /* no return value -> fires once, content stays visible */
+      /* rAF can starve under heavy WebGL load — hard-clear as a fallback */
+      setTimeout(function(){
+        words.concat(rest).forEach(function(el){ el.style.opacity = ''; el.style.transform = ''; });
+      }, 3000);
     }, {amount: 0.25});
   });
 }
